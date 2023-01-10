@@ -13,11 +13,10 @@ híres_katonak = []
 for _ in range(1):
     név=input('kérem adja meg a katona nevét!')
     foglalkozás = input('kérem adja meg a katona rangját!')
-    nemzetiség = input('kérem adja meg a katona nemzetiségét (o,n)!')
+    nemzetiség = input('kérem adja meg a katona nemzetiségét (orosz, német)!')
     híres_katona = Híres_katona(név,foglalkozás,nemzetiség) #példány
     híres_katonak.append(híres_katona)
 
 for híres_katona in híres_katonak:
     print(f'{híres_katona.elotag()} {híres_katona.név} egy híres {híres_katona.nemzetiség} {híres_katona.foglalkozás}')
 
-print("CSABA AZ ÁLLANDÓ HETES")
